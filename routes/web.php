@@ -25,3 +25,5 @@ Route::get('/about-us', function () {
 });
 
 Route::get('/cars', [CarController::class, 'index']);
+
+Route::get('/car/{id}', [CarController::class, 'show']);
